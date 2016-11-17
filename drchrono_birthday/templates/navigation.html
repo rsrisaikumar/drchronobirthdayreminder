@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<div id="nav">
+  <div id="nav-left">
+    <div id="nav-patients" class="nav-link nav-link-left">
+      <a href="{% url 'drchrono_birthday:home' %}">
+        <div class="nav-class-text">
+          <i class="fa fa-home fa-lg"></i> Birthday Reminder
+        </div>
+      </a>
+    </div>
+      </div>
+
+  <div id="nav-right">
+    <div id="nav-email" class="nav-link nav-link-right">
+      <a href="{% url 'drchrono_birthday:edit_email' %}">
+        <div class="nav-class-text">
+          <i class="fa fa-envelope-o fa-lg"></i> Edit Email Message
+        </div>
+      </a>
+    </div>
+<div id="to-drchrono" class="nav-link nav-link-right">
+      <a href="https://drchrono.com/dashboard/">
+        <div class="nav-class-text">
+          <img src="{% static 'images/drchrono-icon.png' %}" alt="" />
+          <span id="drchrono-nav-text">To drchrono</span>
+        </div>
+      </a>
+    </div><div id="sign-out" class="nav-link nav-link-right">
+      <a href="{% url 'drchrono_birthday:logout' %}">
+        <div class="nav-class-text">
+          <i class="fa fa-sign-out fa-lg"></i> Log Out
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

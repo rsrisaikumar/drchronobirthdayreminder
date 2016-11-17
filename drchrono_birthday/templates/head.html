@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drchrono Birthday Reminder</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/drchrono-url-icon.png' %}"/>
+    <link rel="stylesheet" href="{% static 'style/drchrono_birthday.css' %}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    {% if request.user.is_authenticated %}
+      {% include 'navigation.html' %}
+    {% endif %}
+
+    <div id="main">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/drchrono_birthday.js' %}"></script>
+  </body>
+</html>

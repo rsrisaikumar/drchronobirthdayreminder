@@ -1,0 +1,410 @@
+#main {
+  margin: auto;
+  margin-top: 75px;
+  height: 85vh;
+  width: 85vw;
+  color: #545454;
+ }
+.bold {
+  font-weight: 600;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+/*index page*/
+
+button {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-width: 0px;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1.0;
+}
+
+#logo {
+  background-color: #fff;
+  max-width: 500px;
+  width: 45%;
+  margin: auto;
+  font-family: Helvetica;
+  padding: 20px 20px;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#drchrono-logo {
+  width: 100%;
+  max-width: 500px;
+}
+
+#login-button {
+  width: 185px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#demo-button {
+  margin: auto;
+  margin-top: 10px;
+  width: 131px;
+}
+
+.login-button {
+  color: #f5f5f5;
+  padding: 15px 10px;
+  background-color: #0769AD;
+ }
+
+#demo-button .login-button {
+  background-color: #0769AD;
+}
+
+.login-button:hover {
+  color: #fff;
+  border: 1px solid #33a5ff;
+ }
+
+#demo-button .login-button:hover {
+  border: 1px solid darkblue;
+}
+
+.about-app {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.about-app li{
+  margin-bottom: 20px;	
+}
+
+
+
+/*home page*/
+#username {
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+/*patients list*/
+#search-bar {
+  width: 300px;
+  height: 20px;
+  font-size: 14px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+}
+
+#patient-table {
+  padding-top: 5px;
+  border-radius: 3px;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  background-color: orange;
+  color: #fff;
+  padding-left: 5px;
+  border: 1px solid #474B54;
+}
+
+#patient-list {
+  overflow-y: scroll;
+  max-height: 60%;
+  border-top: 1px solid #D3D3D3;
+  border-radius: 0px 0px 3px 3px;
+}
+
+#patient-table-head {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 15px;
+  color: #fff;
+  background-color: #39454f;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.table-content {
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+
+.patient {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 2px 0px;
+}
+
+.patient-col {
+  display:inline-block;
+  word-wrap: break-word;
+}
+
+.col-last-name {
+  width: 20%;
+  padding-left: 10px;
+}
+
+.col-first-name {
+  width: 18%;
+}
+
+.col-email {
+  width: 30%;
+}
+
+.col-birthday {
+  width: 15%;
+}
+
+.col-send-check {
+  width: 10%;
+}
+
+.send-checkbox {
+  position: relative;
+  left: 30%;
+  bottom: 2px;
+}
+
+.changed {
+  background-color: #ADD8E6;
+}
+
+#update-list-button {
+  float: right;
+  font-size: 13px;
+  margin-right: 1%;
+  padding: 1px 10px;
+  background-color: #364650;
+}
+
+/*email page*/
+.email-view {
+  width: 50%;
+  margin: 0 auto;
+}
+#email-description {
+  font-size: 13px;
+  display: inline-block;
+}
+
+#email-subject-input {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.email-input {
+  width: 75%;
+  max-width: 700px;
+  font-size: 15px;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  padding: 10px;
+}
+
+/*save buttons and save results*/
+#email-all-button, #email-none-button  {
+  width: 360px;
+  margin-bottom: 5px;
+}
+
+#email-all-button {
+  background-color: #459420;
+  margin-right: 5px;
+}
+
+#email-none-button {
+  background-color: #B22222;
+}
+
+.save-button {
+  margin-top: 20px;
+  background-color: #0769AD;
+}
+
+.save-button[disabled] {
+  cursor: not-allowed;
+  color: #B5B5B5;
+  background-color: #808080;
+  opacity: 0.2;
+}
+
+.save-button[disabled]:hover {
+  box-shadow: 0px 0px 0px #000;
+}
+
+.center-screen {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+#save-guard {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#save-guard.loading-guard {
+  background-color: #D3D3D3;
+  opacity: 0.9;
+}
+
+#loading-screen {
+  text-align: center;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  width: 45%;
+  background-color: #309549;
+  color: #fff;
+  padding: 20px 0px;
+  padding-right: 70px;
+  border-radius: 5px;
+}
+
+.loading-screen-content {
+  display: inline-block;
+}
+
+#save-success {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+}
+
+#save-success {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+}
+
+#save-fail {
+  background-color: #A21515;
+  border: 1px solid #790F0F;
+  color: #fff;
+}
+
+.save-result {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 75px;
+  padding: 15px 0px;
+  font-size: 30px;
+  opacity: 0.0;
+  transition: opacity 0.5s;
+}
+
+.save-result-fade {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/*navigation*/
+#nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: #39454f;
+  top: 0;
+  left: 0;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  z-index: 100;
+}
+
+#nav-left {
+  float: left;
+}
+
+#nav-right {
+  float: right;
+}
+
+.nav-link {
+  width: 200px;
+  text-align: center;
+  height: inherit;
+  background-color: #39454f;
+  opacity: 0.7;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.nav-link:hover {
+  opacity: 1.0;
+}
+
+.nav-link-left {
+  border-right: 1px solid #C0C0C0;
+}
+
+.nav-link-right {
+  border-left: 1px solid #C0C0C0;
+}
+
+.nav-link>a {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+  top: 0;
+}
+
+.nav-class-text {
+  padding-top: 10px;
+}
+
+#drchrono-nav-text {
+  position: relative;
+  bottom: 5px;
+}
+
+#to-drchrono{
+ background-color: #ffb600;
+}
+
+/*responsive*/
+@media (max-width: 920px) {
+  #nav-patients, #to-drchrono {
+    width: 125px;
+  }
+
+  #nav-email {
+    width: 165px;
+  }
+
+  #sign-out {
+    width: 100px;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+}
