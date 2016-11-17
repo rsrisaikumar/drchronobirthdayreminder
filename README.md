@@ -9,13 +9,13 @@ Drcrhono Birthday reminder is a Django app that facilitates doctors to greet the
 **Additional Dependancies:**
 * DrChrono API
 
-** In `settings.py`:**
+ In `settings.py`:
 * You can fetch the CLIENT_DATA and CLIENT_SECRET by logging in to your Drchrono API Management.
 * Update 'redirect_url' with your url for redirecting (will be http://localhost:port_no./oauth if run locally).
 * Change your email settings accordingly.
 
 
-** Run the following command daily to ensure patients receive the email exactly on their birthdays:**
+** Run the following command daily to ensure patients receive the email exactly on their birthdays: **
       python manage.py send_emails
       
  
