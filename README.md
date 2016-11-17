@@ -15,7 +15,6 @@ Drcrhono Birthday reminder is a Django app that facilitates doctors to greet the
 * Change your email settings accordingly.
 
 
-
 ** Run the following command daily to ensure patients receive the email exactly on their birthdays:**
       python manage.py send_emails
       
